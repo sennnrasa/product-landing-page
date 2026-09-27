@@ -1,1 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fdf6ec;
+    color: #3b2a20;
+    line-height: 1.6;
+    padding-top: 90px; /* ruang untuk navbar fixed */
+}
+
+/* ===== HEADER / NAVBAR (Test 23: selalu di atas) ===== */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #3b2a20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#header-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #d4a373;
+}
+
+#nav-bar {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-link {
+    color: #fdf6ec;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+    background: #d4a373;
+    color: #3b2a20;
+}
+
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(135deg, #d4a373, #a47148);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+/* ===== FEATURES (Flexbox — Test 25) ===== */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 50px 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature {
+    flex: 1 1 260px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+}
+
+.feature h3 {
+    color: #a47148;
+    margin-bottom: 10px;
+}
+
+/* ===== VIDEO ===== */
+.video-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.video-section h2 {
+    margin-bottom: 20px;
+    color: #3b2a20;
+}
+
+#video {
+    width: 100%;
+    max-width: 720px;
+    height: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== FORM ===== */
+.signup {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4e4d0;
+}
+
+.signup h2 {
+    margin-bottom: 10px;
+}
+
+.signup p {
+    margin-bottom: 20px;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#email {
+    flex: 1 1 260px;
+    padding: 12px 16px;
+    border: 2px solid #a47148;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#email:focus {
+    border-color: #3b2a20;
+    box-shadow: 0 0 0 3px rgba(164, 113, 72, 0.3);
+}
+
+#submit {
+    padding: 12px 24px;
+    background: #3b2a20;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#submit:hover {
+    background: #a47148;
+}
+
+/* ===== FOOTER ===== */
+#footer {
+    text-align: center;
+    padding: 24px;
+    background: #3b2a20;
+    color: #fdf6ec;
+    font-size: 0.9rem;
+}
+
+/* ===== MEDIA QUERY (Test 24) ===== */
+@media (max-width: 700px) {
+    #header {
+        flex-direction: column;
+        height: auto;
+        padding: 12px;
+        gap: 8px;
+    }
+
+    body {
+        padding-top: 130px;
+    }
+
+    #nav-bar {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 1.4rem;
+    }
+
+    #video {
+        height: 220px;
+    }
+}
