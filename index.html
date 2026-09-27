@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bean — Premium Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header id="header">
+        <img 
+            id="header-img" 
+            src="https://cdn.freecodecamp.org/curriculum/labs/flower.jpg" 
+            alt="Brew & Bean logo"
+        >
+
+        <nav id="nav-bar">
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#video-section">How It's Made</a>
+            <a class="nav-link" href="#signup">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <h1>Freshly Roasted, Every Morning</h1>
+        <p>Premium single-origin beans delivered to your door.</p>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section id="features" class="features">
+        <div class="feature">
+            <h3>☕ Single Origin</h3>
+            <p>Dari kebun terbaik di Indonesia, Etiopia, dan Kolombia.</p>
+        </div>
+        <div class="feature">
+            <h3>🚚 Free Delivery</h3>
+            <p>Gratis ongkir untuk pembelian di atas Rp150.000.</p>
+        </div>
+        <div class="feature">
+            <h3>🔥 Fresh Roast</h3>
+            <p>Dipanggang setiap minggu, dikirim dalam 24 jam.</p>
+        </div>
+    </section>
+
+    <!-- ===== VIDEO ===== -->
+    <section id="video-section" class="video-section">
+        <h2>How We Roast Our Beans</h2>
+        <iframe 
+            id="video" 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="Coffee roasting process"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+    </section>
+
+    <!-- ===== FORM ===== -->
+    <section id="signup" class="signup">
+        <h2>Join Our Coffee Club</h2>
+        <p>Dapatkan diskon 10% untuk pesanan pertama.</p>
+
+        <form 
+            id="form" 
+            action="https://www.freecodecamp.org/email-submit" 
+            method="post"
+        >
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Masukkan alamat email Anda" 
+                required
+            >
+            <input 
+                type="submit" 
+                id="submit" 
+                value="Subscribe"
+            >
+        </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">
+        <p>&copy; 2025 Brew &amp; Bean. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
